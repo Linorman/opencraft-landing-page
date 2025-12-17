@@ -3,7 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - master  # 改为 master
+  workflow_dispatch:  # 建议添加：允许手动触发
 
 permissions:
   contents: read
