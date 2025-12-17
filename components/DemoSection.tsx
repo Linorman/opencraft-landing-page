@@ -26,18 +26,20 @@ const DemoSection: React.FC = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Video Placeholder */}
-          <div className="relative group rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl aspect-video">
-            <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-colors cursor-pointer">
-              <div className="w-20 h-20 bg-primary/90 rounded-full flex items-center justify-center pl-1 shadow-[0_0_30px_rgba(99,102,241,0.5)] group-hover:scale-110 transition-transform">
-                <Play className="w-8 h-8 text-white fill-white" />
-              </div>
-            </div>
-            {/* Note: In a real app, embed actual video player or iframe here */}
-            <div className="absolute bottom-4 left-4 right-4 text-center">
-                <p className="text-sm text-slate-300 bg-black/50 backdrop-blur px-3 py-1 rounded-full inline-block">
-                    Full walkthrough (3:45)
-                </p>
+          {/* Video 实际播放 */}
+          <div className="relative group rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl aspect-video flex items-center justify-center">
+            <video
+              className="w-full h-full object-cover"
+              src="/opencraft-landing-page/demo-1.mp4"
+              controls
+              poster="https://placehold.co/800x450/020617/fff?text=OpenCraft+Demo"
+            >
+              Your browser does not support the video tag.
+            </video>
+            <div className="absolute bottom-4 left-4 right-4 text-center pointer-events-none">
+              <p className="text-sm text-slate-300 bg-black/50 backdrop-blur px-3 py-1 rounded-full inline-block">
+                Full walkthrough (3:45)
+              </p>
             </div>
           </div>
 
