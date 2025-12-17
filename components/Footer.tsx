@@ -26,10 +26,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-white mb-4">Resources</h4>
             <ul className="space-y-2 text-slate-400 text-sm">
-              <li><a href="#" className="hover:text-primary transition-colors">Documentation</a></li>
               <li><a href="https://github.com/Linorman/OpenCraft.git" className="hover:text-primary transition-colors">Repository</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Issue Tracker</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Roadmap</a></li>
             </ul>
           </div>
 

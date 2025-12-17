@@ -23,8 +23,8 @@ export const NAV_LINKS: NavLink[] = [
 
 export const HERO_STATS: StatItem[] = [
   { value: 12, label: 'Languages Supported', suffix: '+', color: 'primary' },
-  { value: 6, label: 'AI Agents', color: 'secondary' },
-  { value: 5, label: 'Query Modes', color: 'accent' },
+  { value: 5, label: 'AI Agents', color: 'secondary' },
+  { value: 4, label: 'Query Modes', color: 'accent' },
 ];
 
 export const FEATURES: FeatureItem[] = [
