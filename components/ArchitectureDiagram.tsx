@@ -51,7 +51,6 @@ const ArchitectureDiagram: React.FC = () => {
                 <ArchLayer title="Client Layer" color="border-indigo-500/30 shadow-indigo-500/10" icon={Terminal}>
                     <ArchBox label="CLI" sub="Typer" activeColor="primary" />
                     <ArchBox label="Web UI" sub="Gradio" activeColor="primary" />
-                    <ArchBox label="MCP Server" sub="Protocol" activeColor="primary" />
                 </ArchLayer>
 
                 <ConnectionLine />
@@ -99,7 +98,7 @@ const ArchitectureDiagram: React.FC = () => {
                 </div>
                 <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
                     <p className="text-purple-400 font-bold text-lg">Universal</p>
-                    <p className="text-slate-500 text-xs">MCP Protocol Support</p>
+                    <p className="text-slate-500 text-xs">Multi-language support</p>
                 </div>
             </div>
         </div>

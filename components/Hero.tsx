@@ -42,11 +42,6 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-        <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-800/50 border border-slate-700 mb-8 backdrop-blur-sm">
-          <span className="flex h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
-          <span className="text-xs font-medium text-slate-300">v1.0 Public Beta Live</span>
-        </div>
-
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">
             OpenCraft

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Copy, Check, Play, Terminal } from 'lucide-react';
+import { Copy, Check, Play, Terminal, ExternalLink } from 'lucide-react';
 
 const DemoSection: React.FC = () => {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
@@ -13,7 +13,7 @@ const DemoSection: React.FC = () => {
   const steps = [
     { label: 'Clone Repository', cmd: 'git clone https://github.com/Linorman/OpenCraft.git' },
     { label: 'Install Dependencies', cmd: 'pip install -e .' },
-    { label: 'Analyze Repository', cmd: 'opencraft analyze run ./path/to/repo' },
+    { label: 'Analyze Repository', cmd: 'opencraft analyze run <Repo Url>' },
     { label: 'Launch Web UI', cmd: 'opencraft webui' },
   ];
 
@@ -22,7 +22,16 @@ const DemoSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">See It In Action</h2>
-          <p className="text-xl text-slate-400">Watch the workflow or try it yourself.</p>
+          <p className="text-xl text-slate-400 mb-6">Watch the workflow or try it yourself.</p>
+          <a
+            href="http://wrt.linorman.org:12100"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary-dark rounded-xl text-white font-semibold text-lg transition-all hover:scale-105 shadow-[0_0_20px_rgba(99,102,241,0.4)]"
+          >
+            Try Live Demo
+            <ExternalLink className="w-5 h-5" />
+          </a>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
